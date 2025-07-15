@@ -1,0 +1,66 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d0f0ff, #f0f8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+#player {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+select, audio, button {
+  margin-top: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+button {
+  background-color: #00bcd4;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+.theme-switch {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  color: #f0f0f0;
+}
+
+body.dark #player {
+  background: rgba(40, 40, 40, 0.6);
+}
+
+body.dark select, body.dark button {
+  background-color: #333;
+  color: #f0f0f0;
+}

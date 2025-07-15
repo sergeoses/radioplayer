@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Радіо TAVR Media</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="player">
+    <h1>🎵 Радіо TAVR Media</h1>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle" />
+      🌙 Темна тема
+    </label>
+
+    <select id="stationSelect">
+      <option value="https://online.hitfm.ua/HitFM">🎧 Hit FM</option>
+      <option value="https://online.kissfm.ua/KissFM">🔥 KISS FM</option>
+      <option value="https://online.radiorelax.ua/RadioRelax">🌿 Radio Relax</option>
+      <option value="https://online.melodiafm.ua/MelodiaFM">🎶 Melodiya FM</option>
+      <option value="https://online.radioroks.ua/RadioROKS">🎸 Radio ROKS</option>
+      <option value="https://online.nasheradio.ua/NasheRadio">🇺🇦 Наше Радіо</option>
+      <option value="https://online.radiojazz.ua/RadioJazz">🎷 Radio Jazz</option>
+      <option value="https://online.classicradio.ua/ClassicRadio">🎼 Classic Radio</option>
+      <option value="https://online.radiobayraktar.ua/RadioBayraktar">🛡️ Радіо Байрактар</option>
+    </select>
+
+    <audio controls id="audioPlayer"></audio>
+
+    <div class="controls">
+      <button id="playBtn">▶️ Відтворити</button>
+      <button id="pauseBtn">⏸️ Пауза</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
